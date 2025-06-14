@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موقعك الشخصي - نسخة مشابهة لـ CTArabic</title>
+
+  <!-- خطوط و Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet" />
+  <!-- مكتبة AOS للحركات عند التمرير -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Tajawal', sans-serif; background-color: #ffffff; }
+    .header { padding: 60px 0; text-align: center; background: linear-gradient(135deg, #df5a4e, #224abe); color: #fff; }
+    .header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    .header p { font-size: 1.2rem; }
+
+    .section-title { text-align: center; margin: 60px 0 20px; font-size: 2.2rem; color: #333; }
+
+    .service-box, .team-box, .product-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-box:hover, .team-box:hover, .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .service-icon { font-size: 3rem; margin-bottom: 15px; color: #4e73df; }
+    .team-img, .product-img { width:100%; height:200px; object-fit:cover; border-radius:15px; }
+    .whatsapp-btn { position: fixed; bottom: 20px; left: 20px; z-index:999; }
+
+    /* لتغيير ألوان الخطوط:
+       غيّر قيمة color في الأقسام التالية */
+    .service-title, .team-name, .product-title { color: #224abe; }
+    .service-text, .team-role, .product-text { color: #555555; }
+  </style>
+</head>
+<body>
+
+  <!-- ======= أولاً: الهيدر (Header) ======= -->
+  <section class="header" data-aos="fade-down">
+    <h1>مرحبا بكم في عالم التصميم والابتكار</h1>
+    <p>نحو حلول رقمية احترافية مصممة خصيصًا لك</p>
+  </section>
+
+  <div class="container">
+
+    <!-- ======= من نحن ======= -->
+    <section data-aos="fade-up">
+      <h2 class="section-title">من نحن</h2>
+      <p class="text-center">نحن فريق تقني متميّز في تطوير مواقع، تطبيقات، وتصميمات باحترافية عالية. مهمتنا هي تحويل الأفكار إلى واقع رقمي يبرز هويتك.</p>
+    </section>
+
+    <!-- ======= خدماتنا ======= -->
+    <section data-aos="fade-up">
+      <h2 class="section-title">خدماتنا</h2>
+      <div class="row g-4">
+        <!-- مثال خدمة -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 text-center service-box bg-light rounded">
+            <div class="service-icon">💻</div>
+            <h5 class="service-title">تطوير مواقع ويب</h5>
+            <p class="service-text">إنشاء مواقع ديناميكية واحترافية تتوافق مع جميع الأجهزة.</p>
+          </div>
+        </div>
+        <!-- أضف المزيد من الخدمات هنا بنفس النموذج -->
+      </div>
+    </section>
+
+    <!-- ======= معرض الصور ======= -->
+    <section data-aos="fade-up">
+      <h2 class="section-title">معرض الصور</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in"><img src="images/sample1.jpg" alt="صورة 1" class="team-img"></div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100"><img src="images/sample2.jpg" alt="صورة 2" class="team-img"></div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200"><img src="images/sample3.jpg" alt="صورة 3" class="team-img"></div>
+      </div>
+    </section>
+
+    <!-- ======= فريق العمل ======= -->
+    <section data-aos="fade-up">
+      <h2 class="section-title">فريقنا</h2>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="fade-up"><div class="text-center team-box"><img src="images/sample4.jpg" alt="عضو 1" class="team-img"><h6 class="team-name">محمد سعيد</h6><p class="team-role">مدير مشاريع</p></div></div>
+        <!-- أضف أعضاء آخرين بنفس الطريقة -->
+      </div>
+    </section>
+
+<!-- ======= منتجاتنا (10 منتجات) ======= -->
+    <section data-aos="fade-up">
+      <h2 class="section-title">منتجاتنا</h2>
+      <div class="row g-4">
+        <!-- مثال منتج -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card p-2 product-card">
+            <img src="images/sample5.jpg" alt="منتج 1" class="product-img">
+            <div class="card-body">
+              <h5 class="product-title">عنوان المنتج 1</h5>
+              <p class="product-text">وصف مختصر للمنتج 1، يمكنك تغييره هنا.</p>
+            </div>
+          </div>
+        </div>
+        <!-- كرّر العنصر أعلاه حتى تحصل على 10 منتجات -->
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======= زر تواصل واتساب ======= -->
+  <a class="btn btn-success whatsapp-btn" href="https://wa.me/YOURNUMBER" target="_blank">
+    تواصل معنا عبر واتساب
+  </a>
+
+  <!-- مكتبات JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+  </script>
+
+</body>
+</html>
